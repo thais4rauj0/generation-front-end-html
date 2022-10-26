@@ -1,7 +1,3 @@
-// span = document.getElementById("meuNome");
-// txt = document.createTextNode("Thais");
-// span.appendChild(txt);
-
 let email = document.querySelector("#email");
 
 let nome = document.querySelector("#nome");
