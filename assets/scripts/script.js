@@ -40,18 +40,16 @@ function validaEmail(){
         txtEmail.style.color = "green"
         emailOk=true;
     }
-    
-    
 }
 
 function validaAssunto(){
     let txtAssunto = document.querySelector("#txtAssunto")
-        if(assunto.value.length>100){
-            txtAssunto.textContent = "O texto é maior que o permitido(100 caracteres)"
+        if(assunto.value.length>=100){
+            txtAssunto.textContent = "O texto é maior que o permitido"
             txtAssunto.style.color = "red"
-        } else{
-            txtAssunto.style.display = 'none'
-            assuntoOk = true;
+        }else{
+            txtAssunto.style.display = "none"
+            assuntoOk = true
         }
 }
 
