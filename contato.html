@@ -22,24 +22,29 @@
 
         <h1>Entre em contato comigo</h1>
     
-        <form action="">
+        <form class ="formulario" action="">
     
             <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <span id="situacaoNome">Digite apenas letras, evite informar números e caracteres espciais</span>
             <label for="email">Email:</label>
-            <input type="email" id="email">
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <span id="txtEmail">Digite um e-mail válido (ex: email@email.com.br)</span>
             <label for="assunto">Assunto:</label>
-            <textarea name="assunto" id="assunto" cols="20" rows="5"></textarea>
-            <button>Enviar</button>
+            <textarea name="assunto" id="assunto" cols="20" rows="5" onkeyup="validaAssunto()"></textarea>
+            <span id="txtAssunto">Escreva no mínimo 5 caracteres e no máximo 100</span>
+            
+            <button id="envio" onclick="enviar()">Enviar</button>
         </form>
     
         <h2>Endereço: </h2>
     
         <p>Liberdade - São Paulo</p>
     
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3659461904917!2d-46.637830885188656!3d-23.555296984685842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a93e375647%3A0x1c6bd73cda3c9095!2sJap%C3%A3o%20-%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1666635769283!5m2!1spt-BR!2sbr" id="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3659461904917!2d-46.637830885188656!3d-23.555296984685842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a93e375647%3A0x1c6bd73cda3c9095!2sJap%C3%A3o%20-%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1666635769283!5m2!1spt-BR!2sbr" id="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
     </div>
 
+    <script src="assets/scripts/script.js"></script>
     
 </body>
 </html>

@@ -8,6 +8,23 @@ body{
     .foto-perfil{
         display: none;
     }
+    .projetos-linha{
+        width:100%;
+        flex-direction: column!important;
+        margin-left: 20%;
+        
+    }
+    .projetos-linha img{
+        width: 50vw;
+    }
+    .projetos-linha h2{
+        width:100%!important;
+    }
+    .projeto-linha p{
+        width:100%!important;
+        text-align:justify!important;
+    }
+
 }
 p{
     color: rosybrown;
@@ -72,7 +89,6 @@ form{
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     background-color:#DDA0DD;
     border-radius: 25px;
 
@@ -117,8 +133,14 @@ button{
     color: #A52A2A;
 
 }
+.formulario span{
+    margin-left:15px;
+    font-size: 0.8rem;
+    color: #FF69B4;
+
+}
 #mapa{
-    width: 50vw;
+    width: 40vw;
     aspect-ratio: 16/9;
     border:0;
 }
@@ -138,7 +160,7 @@ button{
 }
 
 .projetos-linha p{
-    width: 60%;
+    width: 80%;
 }
 .projetos-linha h2{
     width: 60%;
